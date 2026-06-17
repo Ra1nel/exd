@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCraft – Стань веб-разработчиком</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <canvas id="codeCanvas"></canvas>
+
+  <header class="header">
+    <span class="logo">CodeCraft</span>
+    <div class="nav-buttons">
+      <a href="news.html" class="nav-link">Новости</a>
+      <div class="dropdown">
+        <button class="menu-btn" id="menuToggle">Меню ▼</button>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="index.html" class="login-link">Войти</a>
+          <a href="reg.html" class="register-link">Зарегистрироваться</a>
+          <a href="index.html" class="logout-link">Выйти</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <p class="motivation">Начни карьеру в IT с нуля и стань востребованным специалистом через 6 месяцев!</p>
+    <button class="cta-button" onclick="redirectTo('main.html')">Стать веб-разработчиком</button>
+    <div class="scroll-hint" id="scrollHint">
+      <span>Листай вниз</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </div>
+
+  <section class="learning-section" id="learningSection">
+    <h2 class="section-title">Как проходит обучение</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-step">Шаг 1</div>
+          <div class="timeline-title">Основы HTML</div>
+          <div class="timeline-desc">Семантическая разметка, формы, доступность. Ты создашь каркас своего первого сайта.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-step">Шаг 2</div>
+          <div class="timeline-title">Стилизация CSS</div>
+          <div class="timeline-desc">Flexbox, Grid, анимации и адаптив. Научишься превращать макет в красивый интерфейс.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-step">Шаг 3</div>
+          <div class="timeline-title">Интерактивность JS</div>
+          <div class="timeline-desc">Переменные, функции, события, работа с DOM. Оживи свои страницы.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="timeline-step">Шаг 4</div>
+          <div class="timeline-title">Backend на Python/Java</div>
+          <div class="timeline-desc">Серверная разработка, базы данных, REST API. Станешь полноценным fullstack-разработчиком.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-column">
+      <h4>CodeCraft</h4>
+      <p>Онлайн-школа веб-разработки. Обучаем с нуля до трудоустройства. Современные технологии, практика и менторы из индустрии.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Навигация</h4>
+      <a href="main.html">Главная</a>
+      <a href="news.html">Новости</a>
+    </div>
+    <div class="footer-column">
+      <h4>Мы в соцсетях</h4>
+      <div class="social-links">
+        <a href="#">ВКонтакте</a>
+        <a href="#">Telegram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 CodeCraft. Все права защищены. С любовью к коду.</div>
+  </footer>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>

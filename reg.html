@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация | CodeCraft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/reg.css">
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+  <header class="header">
+    <a href="main.html" class="logo">CodeCraft</a>
+    <a href="index.html" class="nav-link">Войти</a>
+  </header>
+  <div class="main-wrapper">
+    <div class="auth-card">
+      <h2>Регистрация</h2>
+      <form id="regForm">
+        <div class="form-group">
+          <label for="surname">Фамилия</label>
+          <input type="text" id="surname" required placeholder="Иванов">
+        </div>
+        <div class="form-group">
+          <label for="name">Имя</label>
+          <input type="text" id="name" required placeholder="Иван">
+        </div>
+        <div class="form-group">
+          <label for="patronymic">Отчество</label>
+          <input type="text" id="patronymic" placeholder="Иванович (необязательно)">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required placeholder="example@mail.com">
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль (6‑8 симв., буквы, цифры, спецсимволы)</label>
+          <input type="password" id="password" required minlength="6" maxlength="8">
+          <div class="error-msg" id="passwordError">Пароль должен содержать от 6 до 8 символов: буквы, цифры и спецсимволы</div>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Подтверждение пароля</label>
+          <input type="password" id="confirmPassword" required>
+          <div class="error-msg" id="confirmError">Пароли не совпадают</div>
+        </div>
+        <div class="form-group">
+          <label for="birthdate">Дата рождения</label>
+          <input type="date" id="birthdate" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" required placeholder="+7 (999) 123-45-67">
+        </div>
+        <button type="submit" class="submit-btn">Зарегистрироваться</button>
+      </form>
+      <div class="auth-footer">
+        Уже есть аккаунт? <a href="index.html">Войти</a>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/reg.js"></script>
+</body>
+</html>

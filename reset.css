@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background: #f5f7fa;
+  color: #2c3e50;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul, ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+input, button, textarea, select {
+  font: inherit;
+}
